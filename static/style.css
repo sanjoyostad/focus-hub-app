@@ -1,0 +1,147 @@
+/* --- FONTS --- */
+/* Importing 'Playfair Display' for the elegant header */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* --- COLOR PALETTE --- */
+:root {
+    --cream-bg: #F6F0D7;       /* Main Background */
+    --green-light: #C5D89D;    /* Card Headers/Accents */
+    --green-med: #9CAB84;      /* Buttons */
+    --green-dark: #89986D;     /* Navbar/Text */
+}
+
+/* --- GLOBAL STYLES --- */
+body { 
+    background-color: var(--cream-bg); 
+    color: #4a4a4a; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--green-dark);
+    font-weight: 600;
+}
+
+/* --- NAVBAR CUSTOMIZATION (UPDATED) --- */
+.navbar-custom {
+    background-color: var(--green-dark) !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding-top: 1.2rem;    /* Made header taller */
+    padding-bottom: 1.2rem; /* Made header taller */
+}
+
+.navbar-brand {
+    color: var(--cream-bg) !important;
+    font-family: 'Playfair Display', serif; /* New Elegant Font */
+    font-size: 2rem;        /* Much bigger text */
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.nav-link {
+    color: #e8e8e8 !important; 
+    font-size: 1.1rem;      /* Slightly larger menu links */
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--green-light) !important;
+}
+
+.nav-link.active {
+    color: #fff !important;
+    font-weight: bold;
+    border-bottom: 2px solid var(--green-light);
+}
+
+/* --- BUTTON OVERRIDES --- */
+.btn-primary {
+    background-color: var(--green-med);
+    border-color: var(--green-med);
+    color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--green-dark);
+    border-color: var(--green-dark);
+}
+
+.btn-outline-secondary {
+    color: var(--green-dark);
+    border-color: var(--green-dark);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--green-dark);
+    color: var(--cream-bg);
+}
+
+.btn-outline-success {
+    color: var(--green-med);
+    border-color: var(--green-med);
+}
+.btn-outline-success:hover {
+    background-color: var(--green-med);
+    color: white;
+}
+
+/* --- CARD STYLING --- */
+.card {
+    border: 1px solid var(--green-light);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    border-bottom: 1px solid var(--green-med);
+    font-weight: bold;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* --- LANDING PAGE HERO --- */
+.hero-section {
+    background-color: #fff;
+    border: 2px solid var(--green-light);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(137, 152, 109, 0.15);
+}
+
+/* --- UTILITIES --- */
+.iframe-container { 
+    position: relative; 
+    width: 100%; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.iframe-container iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* Hover effect for folders */
+.folder-card { 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    cursor: pointer; 
+}
+.folder-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; 
+    background-color: #fafafa; 
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--cream-bg); }
+::-webkit-scrollbar-thumb { background: var(--green-med); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: var(--green-dark); }
