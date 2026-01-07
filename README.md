@@ -2,9 +2,6 @@
 
 > **Stop Doomscrolling. Start Studying.** > A distraction-free environment to curate your own study materials without the algorithmic noise.
 
-![Focus Hub Screenshot](https://via.placeholder.com/1000x500?text=App+Screenshot+Here)
-*(Add a screenshot of your dashboard here later!)*
-
 ## 📖 About The Project
 
 **Focus Hub** solves the problem of getting distracted while studying online. Instead of watching educational videos on YouTube—where the sidebar and homepage are designed to distract you—you can embed them here. 
